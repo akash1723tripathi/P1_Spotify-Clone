@@ -4,8 +4,25 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Spotify - Web Player</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="utility.css">
 </head>
 <body>
-      
+      <div class="container flex bg_black">
+            <div class="left border ">
+                  <div class="home bg_grey rounded m-1 p-1">
+                        <div class="logo"><img class="invert" src="svg/logo.svg" alt=""></div>
+                        <ul>
+                              <li><img class="invert" src="svg/home.svg" alt="Home">Home</li>
+                              <li><img class="invert" src="svg/search.svg" alt="Search">Search</li>
+                        </ul>
+                  </div>
+                  <div class="library bg_grey rounded m-1 p-1">
+                        Your library
+                  </div>
+            </div>
+            <div class="right border bg_grey "></div>
+      </div>
+      <script src="script.js"></script>
 </body>
 </html>
