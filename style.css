@@ -1,29 +1,118 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
       margin: 0;
       padding: 0;
+      font-family: "Roboto Slab", serif;
 }
 
-.left{
-      width: 20vw;
+.body {
+      background-color: black;
+      color: white;
 }
 
-.right
-{
-      width: 80vw;
+.left {
+      width: 25vw;
+      margin: 0px 0px;
 }
 
-.logo img{
+.right {
+      width: 75vw;
+      margin: 10px 0px;
+      padding: 0px;
+}
+
+.logo img {
       height: 17px;
       width: 48px;
       size: 50px;
 }
 
-.home ul li{
+.home ul li {
       list-style: none;
       width: 14px;
-      display: flex ;
+      display: flex;
       gap: 10px;
       font-size: 10px;
       padding-top: 10px;
+      font-weight: bold;
 }
 
+.heading {
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      font-size: 10px;
+      font-weight: bold;
+      align-items: center;
+      font-size: 8px;
+}
+
+.heading img {
+      /* height: 20px; */
+      width: 13px;
+}
+
+.library {
+      min-height: 66vh;
+      position: relative;
+}
+
+.footer {
+      position: absolute;
+      bottom: 0;
+}
+
+
+.footer div>div {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+}
+
+.footer a {
+      color: grey;
+      text-decoration: none;
+      font-size: 8px;
+}
+
+.footer a:hover {
+      text-decoration: underline;
+}
+
+.footer>div>a span {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 12px;
+}
+
+.footer button {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      background: none;
+      border: 1px solid grey;
+      color: grey;
+      padding: 6px 12px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+}
+
+.footer button svg {
+      width: 10px;
+      height: 10px;
+      fill: grey;
+}
+
+.header {
+      display: flex;
+      justify-content: space-between;
+      background-color: rgb(55, 55, 55);
+}
+
+.header>* {
+      padding: 5px;
+}
