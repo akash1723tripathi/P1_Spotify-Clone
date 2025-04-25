@@ -7,7 +7,7 @@
 }
 
 .body {
-      background-color: black;
+      background: linear-gradient(to bottom, #181818 0%, #000000 100%); 
       color: white;
 }
 
@@ -20,6 +20,7 @@
       width: 75vw;
       margin: 10px 0px;
       padding: 0px;
+      background: linear-gradient(to bottom, #181818 0%, #000000 100%); 
 }
 
 .logo img {
@@ -56,6 +57,7 @@
 .library {
       min-height: 66vh;
       position: relative;
+      background: linear-gradient(to bottom, #181818 0%, #000000 100%); 
 }
 
 .footer {
@@ -110,14 +112,92 @@
 .header {
       display: flex;
       justify-content: space-between;
-      background-color: rgb(55, 55, 55);
+      /* background-color: black; */
+      border-radius: 5px;
 }
 
+.btn {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      /* background-color: black; */
+      padding: 10px;
+}
+
+.btn .black {
+      background: none;
+      border: none;
+      color: #b0b0b0;
+      /* light gray text */
+      font-weight: bold;
+      font-size: 10px;
+      cursor: pointer;
+}
+
+.btn .white {
+      background-color: white;
+      border: none;
+      border-radius: 999px;
+      /* makes the button pill-shaped */
+      color: black;
+      font-weight: bold;
+      font-size: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+}
 .header>* {
       padding: 5px;
 }
 
-.spotifyPlaylist{
+.spotifyPlaylist {
       padding: 6px;
-      
+
+}
+
+.spotifyPlaylist h1 {
+      font-size: 15px;
+      padding-left: 11px;
+}
+
+.cardContainer {
+      margin: 8px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+}
+
+.card {
+      width: 110px;
+      background-color: #252525;
+      color: white;
+      position: relative;
+
+}
+
+.card>* {
+      padding: 3px;
+}
+
+.card p {
+      font-size: 8px;
+}
+
+.card h4 {
+      font-size: 12px;
+}
+
+.card img {
+      width: 95%;
+      object-fit: contain;
+      /* width: 105px; */
+      border-radius: 7px;
+}
+
+.play {
+      position: absolute;
+      width: 20px;
+      top: 80px;
+      right: 3px;
+      opacity: 1;
+      transition: all ease 1s;
 }
